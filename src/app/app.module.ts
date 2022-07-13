@@ -26,6 +26,9 @@ import { OperarSelectComponent } from './operar-select/operar-select.component';
 import { MatSelectModule } from '@angular/material/select';
 import { OperarSliderComponent } from './operar-slider/operar-slider.component';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { OperarSliderToggleComponent } from './operar-slider-toggle/operar-slider-toggle.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +41,8 @@ import { MatSliderModule } from '@angular/material/slider';
     OperarComponent,
     OperarCheckboxComponent,
     OperarSelectComponent,
-    OperarSliderComponent
+    OperarSliderComponent,
+    OperarSliderToggleComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatFormFieldModule,
     MatCheckboxModule,
     MatSelectModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

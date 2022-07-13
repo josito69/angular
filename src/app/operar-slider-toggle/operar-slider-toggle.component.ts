@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './operar-slider-toggle.component.html',
   styleUrls: ['./operar-slider-toggle.component.css']
 })
-export class OperarSliderToggleComponent  {
+export class OperarSliderToggleComponent {
+
   valor1!:number;
   valor2!:number;
   resultado!:string;
@@ -19,7 +20,7 @@ export class OperarSliderToggleComponent  {
     this.resultado='';
     if (this.opcion1) {
       let ope = this.valor1 + this.valor2;
-      this.resultado+=`La suma es `+ope;
+      this.resultado+=`La suma es ${ope} `;
     }
     if (this.opcion2) {
       let ope = this.valor1 - this.valor2;
@@ -34,5 +35,4 @@ export class OperarSliderToggleComponent  {
       this.resultado+=`La division es ${ope} `;
     }
   }
-
 }
