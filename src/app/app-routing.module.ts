@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CardComponent } from './card/card.component';
+import { ContainerDialogComponent } from './container-dialog/container-dialog.component';
 import { JuegoDadosComponent } from './juego-dados/juego-dados.component';
 import { OperarCheckboxComponent } from './operar-checkbox/operar-checkbox.component';
 import { OperarSelectComponent } from './operar-select/operar-select.component';
@@ -10,7 +12,9 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { SorteatorComponent } from './sorteator/sorteator.component';
 import { SumaComponent } from './suma/suma.component';
 import { TablaComponent } from './tabla/tabla.component';
+import { TabsComponent } from './tabs/tabs.component';
 import { ThreeInLlineComponent } from './three-in-lline/three-in-lline.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 const routes: Routes = [
   {path:'',component:JuegoDadosComponent},
@@ -25,7 +29,10 @@ const routes: Routes = [
   {path:'Form7',component:TablaComponent },
   {path:'Form8',component:PaginatorComponent },
   {path:'Form9',component:SorteatorComponent },
-
+  {path:'FormA',component:TabsComponent },
+  {path:'FormB',component:ContainerDialogComponent },
+  {path:'FormC',component:CardComponent },
+  {path:'FormD',component:ToolbarComponent },
 ];
 
 @NgModule({

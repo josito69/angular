@@ -34,8 +34,16 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { SorteatorComponent } from './sorteator/sorteator.component';
 import { MatSortModule } from '@angular/material/sort';
-
-
+import { TabsComponent } from './tabs/tabs.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { DialogArticuloComponent } from './dialog-articulo/dialog-articulo.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ContainerDialogComponent } from './container-dialog/container-dialog.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { CardComponent } from './card/card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +61,11 @@ import { MatSortModule } from '@angular/material/sort';
     TablaComponent,
     PaginatorComponent,
     SorteatorComponent,
+    TabsComponent,
+    DialogArticuloComponent,
+    ContainerDialogComponent,
+    CardComponent,
+    ToolbarComponent,
 
   ],
   imports: [
@@ -77,7 +90,12 @@ import { MatSortModule } from '@angular/material/sort';
     MatSlideToggleModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule 
+    MatSortModule ,
+    MatTabsModule,
+    MatDialogModule,
+    MatMenuModule,
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
